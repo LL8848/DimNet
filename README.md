@@ -1,21 +1,21 @@
-# DimNet
+# DimNet: Transforming Neural Network to Explicit, Albegraic Equations
 Lingnan Lin, April 2022
 
-What is DimNet
-------
-* DimNet is a neural network that 
-* DimNet is designed such that it can be converted to a piecewise function of power-law-like equations.
-* The functional form of DimNet is especially suitable for modeling complex problems of heat transfer and fluid flow.  
 
-
-![Schematic of DimNet](/schematic.png)
-
-
-
-What this code does
+What this package does ...
 ------
 * Construct a DimNet, and train it with your own dataset.
 * Convert the trained DimNet to an explicit, algebraic, piecewise function.
+
+What's DimNet?
+------
+* DimNet is a neural network that consists of an log-transformed input layer, two hidden layers (with activation functions of ReLU and Exp, respectively) and a linear output layer, as shown in the figure below.
+* DimNet is equivalent to a piecewise function of power-law-like equations.
+
+DimNet's structure
+------
+![Schematic of DimNet](/schematic.png)
+
 
 Installation
 ------
