@@ -28,7 +28,7 @@ This code is licensed under the Apache v2 license. Feel free to use all or porti
 
 Dependencies
 ------
-* The code is written in Python 3, which depends on Python libraries including numpy, pandas, matplotlib, scipy, os, etc.  [Anaconda](https://www.anaconda.com/) is the recommended Python platform since it installs all dependencies.
+* The code is written in Python 3.  [Anaconda](https://www.anaconda.com/) is the recommended Python platform since it installs all basic dependencies.
 * PyTorch, sci-kit learn
 
 Directory Structure
