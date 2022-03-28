@@ -28,8 +28,8 @@ This code is licensed under the Apache v2 license. Feel free to use all or porti
 
 Dependencies
 ------
-* The molecular dynamics simulations are done in [LAMMPS](https://lammps.sandia.gov/). 
-* The pre- and post-processing code is written in Python 3, which depends on Python libraries including numpy, pandas, matplotlib, scipy, os, etc.  [Anaconda](https://www.anaconda.com/) is the recommended Python platform since it installs all dependencies.
+* The code is written in Python 3, which depends on Python libraries including numpy, pandas, matplotlib, scipy, os, etc.  [Anaconda](https://www.anaconda.com/) is the recommended Python platform since it installs all dependencies.
+* PyTorch, sci-kit learn
 
 Directory Structure
 ------
@@ -42,13 +42,13 @@ Directory Structure
         ├── eq_system         # Equilibrated systems
         ├── new               # New files are placed here temporarily
     └── src                   # Codes for post-processing LAMMPS outputs
-        ├── lmpoutpose.py     # Module for post-processing general output of LAMMPS ave/time fix
+        ├── core.py           # Module for post-processing general output of LAMMPS ave/time fix
         ├── viscpost.py       # Module for post-processing viscosity data
         ├── rheologymodels.py # Module for various rheology models that are used to fit the shear viscosity
         ├── lmpcopy.py        # Module for organizing the files in different folders    
         ├── utility.py        # High-level functions for quick processing and analysis of results
-    ├── reports               # Jupyter notebooks that call src modules to analyze the results
-    ├── lmpscript             # LAMMPS scripts to perform equilibration and NEMD simulation
+    ├── examples              # Jupyter notebooks that call src modules to analyze the results
+
 
 
 General Workflow
