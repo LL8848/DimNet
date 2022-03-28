@@ -1,6 +1,5 @@
-# DimNet: Transforming Neural Network to Explicit, Albegraic Equations
+# DimNet:  Correlation Development Tool based on Neural Networks
 Lingnan Lin, April 2022
-
 
 What this package does ...
 ------
