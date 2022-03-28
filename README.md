@@ -70,10 +70,6 @@ Exemples
 * 2D problem: friction factor of flow in rough tubes
 
 
-To-do 
-------
-- [ ] Complete the tutorials.
-
 
 Contact 
 ------
