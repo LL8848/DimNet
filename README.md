@@ -7,7 +7,7 @@ What is DimNet
 * DimNet is designed such that it can be converted to a piecewise function of power-law-like equations.
 * The functional form of DimNet is especially suitable for modeling complex problems of heat transfer and fluid flow.  
 
-![Schematic of DimNet](/Fig. 2.jpg)
+![Schematic of DimNet](/Fig 2.jpg)
 
 
 What this code does
