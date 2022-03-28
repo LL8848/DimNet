@@ -4,7 +4,7 @@ Lingnan Lin, April 2022
 What this package does ...
 ------
 * Construct a DimNet, and train it with your own dataset.
-* Convert the trained DimNet to an explicit, algebraic, piecewise function.
+* Convert the trained DimNet to an **_explicit, algebraic, piecewise_** function.
 
 What's DimNet?
 ------
