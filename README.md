@@ -9,8 +9,8 @@ What is DimNet
 
 What this code does
 ------
-* Train DimNet with your own dataset
-* Convert the DimNet to an explicit, algebraic, piecewise function.
+* Construct a DimNet, and train it with your own dataset.
+* Convert the trained DimNet to an explicit, algebraic, piecewise function.
 
 Installation
 ------
