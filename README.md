@@ -1,14 +1,20 @@
 # DimNet
-Lingnan Lin, April 2020
+Lingnan Lin, April 2022
 
 What is DimNet
 ------
-* Prepare scripts for standard non-equilibrium molecular dynamics (NEMD) simulation in LAMMPS to compute viscosity.
+* DimNet is a neural network that 
+* DimNet is designed such that it can be converted to a piecewise function of power-law-like equations.
+* The functional form of DimNet is especially suitable for modeling complex problems of heat transfer and fluid flow.  
 
 What this code does
 ------
 * Train DimNet with your own dataset
 * Convert the DimNet to an explicit, algebraic, piecewise function.
+
+Installation
+------
+Simply download the zip file and unzip to a folder where you can run Python.
 
 License & Citation
 ------
