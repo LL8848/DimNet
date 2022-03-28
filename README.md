@@ -8,7 +8,7 @@ What is DimNet
 * The functional form of DimNet is especially suitable for modeling complex problems of heat transfer and fluid flow.  
 
 
-![Schematic of DimNet](/dimnet/GrooveFlow.png)
+![Schematic of DimNet](/GrooveFlow.png)
 
 
 
