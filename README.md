@@ -1,4 +1,4 @@
-# DimNet:  Correlation Development Tool based on Neural Networks
+# Correlation Development Tool based on Neural Networks (DimNet)
 Lingnan Lin, April 2022
 
 What this package does ...
