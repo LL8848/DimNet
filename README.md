@@ -1,15 +1,15 @@
-# Correlation Development Tool based on Dimensionless Neural Networks (DimNet)
+# Correlation Development Tool based on DimNet
 Lingnan Lin, April 2022
-
-What this package does ...
-------
-* Construct a DimNet, and train it with your own dataset.
-* Convert the trained DimNet to an **_explicit, algebraic, piecewise_** function.
 
 What's DimNet?
 ------
 * DimNet is a neural network that consists of an log-transformed input layer, two hidden layers (with activation functions of ReLU and Exp, respectively) and a linear output layer, as shown in the figure below.
 * DimNet is equivalent to a piecewise function of power-law-like equations.
+
+What this package does ...
+------
+* Construct a DimNet, and train it with your own dataset.
+* Convert the trained DimNet to an **_explicit, algebraic, piecewise_** function.
 
 DimNet's structure
 ------
