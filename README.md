@@ -1,5 +1,5 @@
 # Correlation Development Tool based on DimNet
-Lingnan Lin, April 2022
+This package was developed by Lingnan Lin and Lei Gao.
 
 What's DimNet?
 ------
@@ -31,36 +31,11 @@ Dependencies
 * The code is written in Python 3.  [Anaconda](https://www.anaconda.com/) is the recommended Python platform since it installs all basic dependencies (numpy, pandas, joblib, etc.)
 * Additional: PyTorch, scikit-learn
 
-Directory Structure
+
+Tutorials 
 ------
-    .
-
-    └── data                  # Data files
-        ├── archive_nemd      # Input & output files of NEMD simulations in LAMMPS
-        ├── archive_eq        # Input & output files for equilibration in LAMMPS
-        ├── visc              # All the viscosity outputs
-        ├── eq_system         # Equilibrated systems
-        ├── new               # New files are placed here temporarily
-    └── src                   # Codes for post-processing LAMMPS outputs
-        ├── core.py           # Module for post-processing general output of LAMMPS ave/time fix
-        ├── viscpost.py       # Module for post-processing viscosity data
-        ├── rheologymodels.py # Module for various rheology models that are used to fit the shear viscosity
-        ├── lmpcopy.py        # Module for organizing the files in different folders    
-        ├── utility.py        # High-level functions for quick processing and analysis of results
-    ├── examples              # Jupyter notebooks that call src modules to analyze the results
-
-
-
-Usage
-------
-1.	Import the dataset and save it as a Pandas DataFrame ```df```.
-2.  Use ```train_DimNet``` to construct and train a DimNet with ```df``` 
-3.  
-
-Exemples 
-------
-* 1D problem: friction factor of flow in smooth tubes
-* 2D problem: friction factor of flow in rough tubes
+* 1D case study: friction factor of flow in smooth tubes
+* 2D case study: friction factor of flow in rough tubes
 
 
 
