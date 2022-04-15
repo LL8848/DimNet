@@ -30,12 +30,14 @@ Dependencies
 ------
 * The code is written in Python 3.  [Anaconda](https://www.anaconda.com/) is the recommended Python platform since it installs all basic dependencies (numpy, pandas, joblib, etc.)
 * Additional: PyTorch, scikit-learn
+* The tutorials are run in Jupyter Notebook, which is included in Anaconda.
+
 
 
 Tutorials 
 ------
-* 1D_example: friction factor of flow in smooth tubes
-* 2D_example: friction factor of flow in rough tubes
+* [1D_example](/Example_1D.ipynb): friction factor of flow in smooth tubes
+* [2D_example](/Example_1D.ipynb): friction factor of flow in rough tubes
 
 
 
