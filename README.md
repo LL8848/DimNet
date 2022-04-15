@@ -18,17 +18,13 @@ DimNet's structure
 Installation & Usage
 ------
 * Simply download the zip file and unzip to a folder where you can run Python **(Make sure you've installed all the Dependencies!)**
-* Follow the **Tutorials** to get familiar with the package
+* Follow the **Tutorials** to get familiar with the package (the instructions and considerations are provided in comments) 
 * Create your own jobs by modifying the provided examples
 
 Tutorials 
 ------
 * [Example_1D](/Example_1D.ipynb): friction factor of flow in smooth tubes
 * [Example_2D](/Example_2D.ipynb): friction factor of flow in rough tubes
-
-Comments
-------
-* 
 
 Dependencies
 ------
