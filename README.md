@@ -34,8 +34,8 @@ Dependencies
 
 Tutorials 
 ------
-* 1D case study: friction factor of flow in smooth tubes
-* 2D case study: friction factor of flow in rough tubes
+* 1D_example: friction factor of flow in smooth tubes
+* 2D_example: friction factor of flow in rough tubes
 
 
 
