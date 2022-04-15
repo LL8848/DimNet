@@ -16,9 +16,10 @@ DimNet's structure
 ![Schematic of DimNet](/schematic.png)
 
 
-Installation
+Installation & Usage
 ------
-Simply download the zip file and unzip to a folder where you can run Python.
+* Simply download the zip file and unzip to a folder where you can run Python.
+* Follow the Tutorials, then 
 
 License & Citation
 ------
