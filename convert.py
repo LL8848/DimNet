@@ -126,7 +126,13 @@ def pw_predict():
     used to validate the algebraic correlation printed by dimnet_to_pw
     copy the printed equations and paste here
     """
+    z1 = log(Re**0.48) - 2.2840
+    z2 = log(Re**-0.46) + 3.8497
 
+    if (z1>0)&(z2>0):
+        -2.1e+03 + 6.2e+02 * (Re**-1.00) - 1.1e-21 * (Re**5.60)
+    elif (True):
+        pass
 
 
 if __name__ == '__main__':
