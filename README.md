@@ -19,7 +19,8 @@ DimNet's structure
 Installation & Usage
 ------
 * Simply download the zip file and unzip to a folder where you can run Python.
-* Follow the Tutorials, then 
+* Follow the Tutorials to get familiar withthe package
+* Create your own jobs by modifying the provided examples
 
 License & Citation
 ------
