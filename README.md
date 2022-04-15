@@ -1,5 +1,5 @@
 # Correlation Development Tool based on DimNet
-This package was developed by Lingnan Lin and Lei Gao.
+Developer: Lingnan Lin and Lei Gao.
 
 What's DimNet?
 ------
