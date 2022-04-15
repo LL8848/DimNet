@@ -32,7 +32,7 @@ Tutorials
 Dependencies
 ------
 * The code is written in Python 3.  [Anaconda](https://www.anaconda.com/) is the recommended Python platform since it installs all basic dependencies (numpy, pandas, joblib, etc.)
-* Additional: PyTorch, scikit-learn
+* Additional: PyTorch, [scikit-learn](https://scikit-learn.org/stable/install.html)
 * The tutorials are run in Jupyter Notebook, which is included in Anaconda.
 
 
