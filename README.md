@@ -36,8 +36,8 @@ Dependencies
 
 Tutorials 
 ------
-* [1D_example](/Example_1D.ipynb): friction factor of flow in smooth tubes
-* [2D_example](/Example_1D.ipynb): friction factor of flow in rough tubes
+* [Example_1D](/Example_1D.ipynb): friction factor of flow in smooth tubes
+* [Example_2D](/Example_2D.ipynb): friction factor of flow in rough tubes
 
 
 
