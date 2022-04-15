@@ -15,19 +15,20 @@ DimNet's structure
 ------
 ![Schematic of DimNet](/schematic.png)
 
-
 Installation & Usage
 ------
 * Simply download the zip file and unzip to a folder where you can run Python **(Make sure you've installed all the Dependencies!)**
 * Follow the **Tutorials** to get familiar with the package
 * Create your own jobs by modifying the provided examples
 
-
 Tutorials 
 ------
 * [Example_1D](/Example_1D.ipynb): friction factor of flow in smooth tubes
 * [Example_2D](/Example_2D.ipynb): friction factor of flow in rough tubes
 
+Comments
+------
+* 
 
 Dependencies
 ------
@@ -35,13 +36,11 @@ Dependencies
 * Additional: [PyTorch](https://pytorch.org/get-started/locally/), [scikit-learn](https://scikit-learn.org/stable/install.html)
 * The tutorials are run in Jupyter Notebook, which is included in Anaconda.
 
-
 License & Citation
 ------
 This code is licensed under the Apache v2 license. Feel free to use all or portions for your research or related projects so long as you provide the following citation information:
 
 *Lin, L., Gao, L., Kedzierski, M., Hwang, Y. 2022. A general model for flow boiling heat transfer in microfin tubes based on a new neural network architecture. Energy and AI. 8: 100151. https://doi.org/10.1016/j.egyai.2022.100151*
-
 
 Contact 
 ------
