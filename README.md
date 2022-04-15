@@ -22,6 +22,11 @@ Installation & Usage
 * Follow the **Tutorials** to get familiar with the package
 * Create your own jobs by modifying the provided examples
 
+Tutorials 
+------
+* [Example_1D](/Example_1D.ipynb): friction factor of flow in smooth tubes
+* [Example_2D](/Example_2D.ipynb): friction factor of flow in rough tubes
+
 License & Citation
 ------
 This code is licensed under the Apache v2 license. Feel free to use all or portions for your research or related projects so long as you provide the following citation information:
@@ -36,10 +41,6 @@ Dependencies
 
 
 
-Tutorials 
-------
-* [Example_1D](/Example_1D.ipynb): friction factor of flow in smooth tubes
-* [Example_2D](/Example_2D.ipynb): friction factor of flow in rough tubes
 
 
 
