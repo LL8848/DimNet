@@ -40,6 +40,6 @@ This code is licensed under the Apache v2 license. Feel free to use all or porti
 
 Contact 
 ------
-Feel free to contact me should you have any questions:
+Feel free to contact me should you have any questions/comments:
 Lingnan Lin, Ph.D.
 Email: lingnan dot lin at nist dot gov
