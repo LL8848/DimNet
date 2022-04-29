@@ -1,5 +1,6 @@
 # Correlation Development Tool based on DimNet
-**This tool allows one to develop correlations by training a special neural network, DimNet. The obtained correlations are simple, explicit, and algebraic, while keeping the powerful predictive capability of neural networks.**
+**This tool allows one to develop correlations by training a special neural network, DimNet. **
+**The obtained correlations are simple, explicit, and algebraic, while keeping the powerful predictive capability of neural networks.**
 
 Developer: Lingnan Lin and Lei Gao.
 
