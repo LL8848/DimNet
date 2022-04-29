@@ -8,15 +8,15 @@ What's DimNet?
 * DimNet is equivalent to a piecewise function of power-law-like equations.
 * One can train a DimNet with experimental/simulation data and then convert the trained network to an explicit, power-law-like piecewise function.
 
-What this package does ...
-------
-* Construct a DimNet, and train it with your own dataset.
-* Convert the trained DimNet to an **_explicit, algebraic, piecewise_** function.
-
 DimNet's structure
 ------
 DimNet is a feed-forward neural network that consists of an log-transformed input layer, two hidden layers (with activation functions of ReLU and Exp, respectively) and a linear output layer, as shown in the figure below.
 ![Schematic of DimNet](/schematic.png)
+
+What this package does ...
+------
+* Construct a DimNet, and train it with your own dataset.
+* Convert the trained DimNet to an **_explicit, algebraic, piecewise_** function.
 
 Installation & Usage
 ------
@@ -24,16 +24,16 @@ Installation & Usage
 * Follow the **Tutorials** to get familiar with the package (the instructions and considerations are provided in comments) 
 * Create your own jobs by modifying the provided examples
 
-Tutorials 
-------
-* [Example_1D](/Example_1D.ipynb): friction factor of flow in smooth tubes
-* [Example_2D](/Example_2D.ipynb): friction factor of flow in rough tubes
-
 Dependencies
 ------
 * The code is written in Python 3.  [Anaconda](https://www.anaconda.com/) is the recommended Python platform since it installs all basic dependencies (numpy, pandas, joblib, etc.)
 * Additional: [PyTorch](https://pytorch.org/get-started/locally/), [scikit-learn](https://scikit-learn.org/stable/install.html)
 * The tutorials are run in Jupyter Notebook, which is included in Anaconda.
+
+Tutorials 
+------
+* [Example_1D](/Example_1D.ipynb): friction factor of flow in smooth tubes
+* [Example_2D](/Example_2D.ipynb): friction factor of flow in rough tubes
 
 License & Citation
 ------
