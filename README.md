@@ -19,7 +19,8 @@ What this package does ...
 * Convert the trained DimNet to an **_explicit, algebraic, piecewise_** function.
 
 Installation 
-------Simply download the zip file and unzip to a folder where you can run Python **(Make sure you've installed all the Dependencies!)**
+------
+Simply download the zip file and unzip to a folder where you can run Python **(Make sure you've installed all the Dependencies!)**
 
 Dependencies
 ------
