@@ -2,7 +2,7 @@
 """
 Created on Mon Oct 12 17:44:37 2020
 
-@author: lnl5
+@author: Lingnan Lin, NIST, lingnan.lin@nist.gov
 """
 import torch
 from torch import nn

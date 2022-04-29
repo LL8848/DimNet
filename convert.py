@@ -2,7 +2,7 @@
 """
 Created on Thu Apr 14 16:41:26 2022
 
-@author: lnl5
+@author: Lingnan Lin, NIST, lingnan.lin@nist.gov
 """
 
 from itertools import product
@@ -29,17 +29,17 @@ def pi_str(num):
     Generate a string for Π with a subscript of num
     """
     split_num = [int(a) for a in str(num)]
-    
+
     sub = []
     for x in split_num:
         sub.append(Subscripts[x])
-    
+
     s = ''.join(sub)
     return('Π' + s)
 
 
 
-def dimnet_to_correlation(model, col_x=None, col_y=None, digits_exp=2, digits=3, verbose=10):  
+def dimnet_to_correlation(model, col_x=None, col_y=None, digits_exp=2, digits=3, verbose=10):
     """
     Convert a trained DimNet to a piecewise function
 
@@ -84,15 +84,15 @@ def dimnet_to_correlation(model, col_x=None, col_y=None, digits_exp=2, digits=3,
 
         w3 = net.output.weight.numpy()
         b3 = net.output.bias.numpy()
-    
+
     L, M, N = len(w1[0]), len(w2[0]), len(w3[0])  # corresponding to indexes of i, j, k
     print("-" * 80)
     print(f"DimNet Config: {L} - {M} - {N} - 1")
-    
+
     if col_x == None:
         # col_x = [pi_str(l+1) for l in range(L)]
         col_x = [f'x[{l}]' for l in range(L)]
-        
+
     if col_y == None:
         # col_y = ['Π₀']
         col_y = ['y']
@@ -175,7 +175,7 @@ def dimnet_to_correlation(model, col_x=None, col_y=None, digits_exp=2, digits=3,
             else:
                 print(f" and z{j + 1:d} {delta_sign[d][j]:s} 0:")
         p0 = b3[0]*y_factor
-        print(f"    {col_y[0]} = {p0:.{digits}e}", end="")        
+        print(f"    {col_y[0]} = {p0:.{digits}e}", end="")
         for k in range(N):
             print(f" + {P[k]:.{digits}e} * (", end="")
             for i in range(L):
@@ -225,16 +225,16 @@ def pw_predict(x):
 
     z1 = -2.284e+00 + ln(x[0]**0.48)
     z2 = 3.850e+00 + ln(x[0]**-0.49)
-     
+
     if z1 > 0 and z2 > 0:
-        y = -2.083e-03 + 6.171e+01 * (x[0]**-0.99) + 1.093e-21 * (x[0]**5.60) 
+        y = -2.083e-03 + 6.171e+01 * (x[0]**-0.99) + 1.093e-21 * (x[0]**5.60)
     if z1 > 0 and z2 <= 0:
-        y = -2.083e-03 + 8.262e-01 * (x[0]**-0.45) + 4.954e-02 * (x[0]**-0.10) 
+        y = -2.083e-03 + 8.262e-01 * (x[0]**-0.45) + 4.954e-02 * (x[0]**-0.10)
     if z1 <= 0 and z2 > 0:
-        y = -2.083e-03 + 7.485e+00 * (x[0]**-0.54) + 6.748e-22 * (x[0]**5.71) 
+        y = -2.083e-03 + 7.485e+00 * (x[0]**-0.54) + 6.748e-22 * (x[0]**5.71)
     if z1 <= 0 and z2 <= 0:
-        y = -2.083e-03 + 1.002e-01 * (x[0]**0.00) + 3.060e-02 * (x[0]**0.00)   
-    
+        y = -2.083e-03 + 1.002e-01 * (x[0]**0.00) + 3.060e-02 * (x[0]**0.00)
+
     return y
 
 
@@ -246,43 +246,43 @@ if __name__ == '__main__':
     # path = 'data/Noisy_Smooth_200_[3, 1]_17.model'
     # path = 'data/Noisy_Smooth_200_[3, 2]_98.model'
     # path = 'data/Noisy_Smooth_200_[3, 3]_27.model'
-    
+
     # 2D examples
     # path = 'data/Noisy_Rough_1200_[2, 2]_5.model'
     # path = 'data/Noisy_Rough_1200_[3, 2]_34.model'
     # path = 'data/Noisy_Rough_1200_[3, 3]_8.model'
-    
-    df_train = pd.read_csv("data/data_smooth.csv")    
+
+    df_train = pd.read_csv("data/data_smooth.csv")
     # df_train = pd.read_csv("data/data_rough.csv")
-    
+
     col_x = ['Re'] # list of the names of the input variables
     col_y = ['f'] # list of the names of the output variables
     model = load(path)
-    
+
     dimnet_to_correlation(model,
                           digits_exp=2, digits=3, verbose=0)
 
     # validation:
-    
+
     print("Original DimNet vs. Converted Piecewise Function:\n")
-    
+
     y_nn = model.predict(df_train[col_x].values).flatten()
     y_label = df_train.f.values
-    
+
     y_pw = []
 
     for index, row in df_train.iterrows():
         y_pw.append(pw_predict(row[col_x].values))
     y_pw = np.array(y_pw)
-    
+
     diff = (y_nn - y_pw)/y_nn
 
     print(f"mean abs. difference = {np.mean(np.abs(diff)):.2e}")
     print(f"max difference  = {np.max(diff):.2e}")
-    print(f"min difference  = {np.min(diff):.2e}")    
+    print(f"min difference  = {np.min(diff):.2e}")
     plt.hist(diff)
     plt.show()
-    
+
     plt.scatter(y_nn,diff)
     plt.xlabel('y_nn')
     plt.ylabel('(y_nn - y_pw)/y_nn')
@@ -291,5 +291,4 @@ if __name__ == '__main__':
     mape_pw,_,_ = compute_metrics(y_label, y_pw, verbose=False)
     print(f"mape_pw = {mape_pw*100:.2f}%")
     mape_nn,_,_ = compute_metrics(y_label, y_nn, verbose=False)
-    print(f"mape_nn = {mape_nn*100:.2f}%")        
-
+    print(f"mape_nn = {mape_nn*100:.2f}%")
