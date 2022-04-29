@@ -3,7 +3,7 @@ Developer: Lingnan Lin and Lei Gao.
 
 What's DimNet?
 ------
-* DimNet is a neural network that consists of an log-transformed input layer, two hidden layers (with activation functions of ReLU and Exp, respectively) and a linear output layer, as shown in the figure below.
+* DimNet is a special neural network, primarily designed to generate correlations for complex thermal-hydraulic problems, but can also be applied to other modeling problems.
 * DimNet is equivalent to a piecewise function of power-law-like equations.
 
 What this package does ...
