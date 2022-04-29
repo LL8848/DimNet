@@ -13,6 +13,7 @@ What this package does ...
 
 DimNet's structure
 ------
+DimNet is a feed-forward neural network that consists of an log-transformed input layer, two hidden layers (with activation functions of ReLU and Exp, respectively) and a linear output layer, as shown in the figure below.
 ![Schematic of DimNet](/schematic.png)
 
 Installation & Usage
