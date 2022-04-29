@@ -5,7 +5,7 @@ What's DimNet?
 ------
 * DimNet is a special neural network, primarily designed to generate explicit & algebraic correlations for complex thermal-hydraulic problems, but can also be applied to other modeling problems.
 * DimNet is equivalent to a piecewise function of power-law-like equations.
-* One can train DimNet with experimental or simulation data and then convert the trained network to an explicit, power-law-like piecewise function.
+* One can train a DimNet with experimental/simulation data and then convert the trained network to an explicit, power-law-like piecewise function.
 
 What this package does ...
 ------
