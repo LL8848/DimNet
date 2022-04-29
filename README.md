@@ -1,4 +1,6 @@
 # Correlation Development Tool based on DimNet
+This tool allows one to develop explicit & algebraic correlations by training a special neural network, DimNet. 
+
 Developer: Lingnan Lin and Lei Gao.
 
 What's DimNet?
