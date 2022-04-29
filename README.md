@@ -18,11 +18,8 @@ What this package does ...
 * Construct a DimNet, and train it with your own dataset.
 * Convert the trained DimNet to an **_explicit, algebraic, piecewise_** function.
 
-Installation & Usage
-------
-* Simply download the zip file and unzip to a folder where you can run Python **(Make sure you've installed all the Dependencies!)**
-* Follow the **Tutorials** to get familiar with the package (the instructions and considerations are provided in comments) 
-* Create your own jobs by modifying the provided examples
+Installation 
+------Simply download the zip file and unzip to a folder where you can run Python **(Make sure you've installed all the Dependencies!)**
 
 Dependencies
 ------
@@ -30,8 +27,9 @@ Dependencies
 * Additional: [PyTorch](https://pytorch.org/get-started/locally/), [scikit-learn](https://scikit-learn.org/stable/install.html)
 * The tutorials are run in Jupyter Notebook, which is included in Anaconda.
 
-Tutorials 
+Usage & Tutorials 
 ------
+Please first follow the **Tutorials** to get familiar with the package (the instructions and considerations are provided in comments), then create your own jobs by modifying the provided examples
 * [Example_1D](/Example_1D.ipynb): friction factor of flow in smooth tubes
 * [Example_2D](/Example_2D.ipynb): friction factor of flow in rough tubes
 
